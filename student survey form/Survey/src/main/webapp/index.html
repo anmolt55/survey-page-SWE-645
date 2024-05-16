@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type = "text/css" href="style.css">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	
+</head>
+
+<body>
+	<h1>Student Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="firstname" id="label-name">
+				First Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="firstname"
+				placeholder="Enter your First name" />
+		</div>
+        
+        <div class="form-control">
+			<label for="lastname" id="label-name">
+				Last Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="lastname"
+				placeholder="Enter your last name" />
+		</div>
+
+        <div class="form-control">
+			<label for="streetaddress" id="label-name">
+				Street Address
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="streetaddress"
+				placeholder="Enter street address" />
+		</div>
+
+        <div class="form-control">
+			<label for="city" id="label-name">
+				City
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="city"
+				placeholder="Enter City" />
+		</div>
+
+        <div class="form-control">
+			<label for="state" id="label-name">
+				State
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="state"
+				placeholder="Enter State" />
+		</div>
+
+        <div class="form-control">
+			<label for="zipcode" id="label-name">
+				Zip Code
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="zipcode"
+				placeholder="Enter Zipcode" />
+		</div>
+
+        
+        <div class="form-control">
+			<label for="telephone" id="label-name">
+				Telephone
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="telephone"
+				placeholder="Enter Telephone number" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="date" id="label-age">
+				Date of Survey
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="date"
+				placeholder="Enter Date of Survey" />
+		</div>
+    
+        <div class="form-control">
+			<label>What do you like about the campus
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Students</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Location</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Campus</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Atmosphere</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Dorm Rooms</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Sports</input></label>
+		</div>
+
+	
+		<div class="form-control">
+			<label>
+				What got your interest in the university
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Friends</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Television</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Internet</input>
+			</label>
+            <label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">Other</input>
+			</label>
+		</div>
+
+
+        <div class="form-control">
+           <label for="role" id="label-role">
+            Of the options below, How likely are you to recommend this school to other students
+           </label>
+        
+        <!-- Dropdown options -->
+        <select name="role" id="role">
+            <option value="verylikely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely"> Unlikely </option>
+        </select>
+    </div>
+  
+    <div class="form-control">
+        <label for="raffle">
+           Enter 10 numbers between 1 to 100 (eg: 2, 5, 88, 49, 34....)
+        </label>
+
+        <!-- multi-line text input control -->
+        <textarea name="raffle" id="raffle"
+            placeholder="Enter 10 numbers between 1 to 100">
+        </textarea>
+    </div>
+		<div class="form-control">
+			<label for="comment">
+				additional comments
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter Any additional comments ">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+        <button type="cancel" value="cancel">
+			Cancel
+		</button>
+
+
+	</form>
+</body>
+
+</html>
